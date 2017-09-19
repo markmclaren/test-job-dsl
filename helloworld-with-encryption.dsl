@@ -7,7 +7,7 @@ def stringToEncrypt = "Hello World!"
 
 def commandToRun = 'echo "' + stringToEncrypt + '"'
 
-job('helloworld') {
+job('helloworld-with-encryption') {
     steps {
         println("Hello From Inside the Seed Job!")
         shell(commandToRun)
