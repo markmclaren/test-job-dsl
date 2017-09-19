@@ -14,10 +14,10 @@ job('helloworld-with-encryption') {
     }
 }
 
-static String encrypt(String in){
+String encrypt(String in){
     return textEncryptor.encrypt(in);
 }
 
-static String decrypt(String in){
+String decrypt(String in){
     return textEncryptor.decrypt(in);
 }
