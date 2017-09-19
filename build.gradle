@@ -1,0 +1,14 @@
+group 'mark.mclaren'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    compile 'org.jasypt:jasypt:1.9.2'
+    compile 'org.bouncycastle:bcprov-jdk16:1.46'
+}
