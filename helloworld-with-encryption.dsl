@@ -1,3 +1,5 @@
+job('helloworld-with-encryption') {
+
 import org.jasypt.util.text.BasicTextEncryptor
 
 BasicTextEncryptor textEncryptor = new BasicTextEncryptor();
@@ -7,7 +9,6 @@ def stringToEncrypt = "Hello World!"
 
 def commandToRun = 'echo "' + stringToEncrypt + '"'
 
-job('helloworld-with-encryption') {
     steps {
         println("Hello From Inside the Seed Job!")
         shell(commandToRun)
