@@ -1,4 +1,3 @@
-
 import org.jasypt.util.text.BasicTextEncryptor
 
 BasicTextEncryptor textEncryptor = new BasicTextEncryptor();
