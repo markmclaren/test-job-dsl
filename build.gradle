@@ -10,8 +10,8 @@ configurations {
 }
 
 dependencies {
-    compile 'org.jasypt:jasypt:1.9.2'
-    compile 'org.bouncycastle:bcprov-jdk16:1.46'
+    libs 'org.jasypt:jasypt:1.9.2'
+    libs 'org.bouncycastle:bcprov-jdk16:1.46'
 }
 
 task clean(type: Delete) {
