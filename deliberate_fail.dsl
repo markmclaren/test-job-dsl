@@ -1,3 +1,3 @@
 job('deliberate-fail'){
-    throw new Exception("Arrrgggghhh")
+    //throw new Exception("Arrrgggghhh")
 }
