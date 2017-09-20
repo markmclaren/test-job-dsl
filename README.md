@@ -4,7 +4,7 @@ In case you happen upon this.  I offer no support!  This is purely an area for m
 
 ## Seed job creation:
 
-The *Jenkinsfile* (Jenkins Pipeline) creates the Job DSL seed job.  
+The *Jenkinsfile* (Jenkins Pipeline) creates the Job DSL seed job.  This is *"imported"* into Jenkins by means of creating a new pipeline job and configuring the SCM section to look at this Git repository.   Running this pipeline will create/update the seed job.
 
 From an empty Jenkins installation it is easier to import a Jenkinsfile from a Git repo than to manually create a Seed job in the UI.
 
