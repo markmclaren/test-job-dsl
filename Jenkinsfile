@@ -14,7 +14,7 @@ node {
               useWrapper(false)
             }
             dsl {
-               external \'**/*.dsl\'
+               external \'**/*_jobdsl.groovy\'
                additionalClasspath \'lib/*.jar\'
             }
         }    
