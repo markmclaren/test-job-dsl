@@ -1,1 +1,18 @@
 # Experiments with Job DSL
+
+## Seed job creation:
+
+The *Jenkinsfile* (Jenkins Pipeline) creates the Job DSL seed job.  
+
+From an empty Jenkins installation it is easier to import a Jenkinsfile from a Git repo than to manually create a Seed job in the UI.
+
+This seed job establishes:
+
+* the Git repo where the Job DSL lives
+* a gradle build to acquire required libraries (e.g. Jasypt)
+* the additional classpath (to include the Jasypt library)
+* the path for the job dsl files
+
+## Running the seed job
+
+The seed job will create a Jenkins job (or possibly multiple jobs) for each \*_jobdsl.groovy file it finds in the Git repo
