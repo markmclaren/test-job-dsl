@@ -11,7 +11,7 @@ From an empty Jenkins installation it is easier to import a Jenkinsfile from a G
 This seed job establishes:
 
 * the Git repo where the Job DSL files live
-* a gradle build to acquire required additional libraries (e.g. Jasypt)
+* a gradle build to acquire required additional libraries (e.g. [Jasypt](http://www.jasypt.org/))
 * the additional classpath (to include the Jasypt library)
 * the path for the job dsl files
 
