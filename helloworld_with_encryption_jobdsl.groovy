@@ -1,7 +1,13 @@
 import org.jasypt.util.text.BasicTextEncryptor
 
+// Fetch decryption key via the credentials plugin
+def secret = "do_not_use_this!"
+if(build.buildVariableResolver.resolve("SECRET_DECRYPTION_KEY")) {
+    secret = build.buildVariableResolver.resolve("SECRET_DECRYPTION_KEY")
+}
+
 textEncryptor = new BasicTextEncryptor();
-textEncryptor.setPassword("123");
+textEncryptor.setPassword(secret);
 
 def stringToEncrypt = "Hello World!"
 def commandToRun = 'echo "' + encrypt(stringToEncrypt) + '"'
