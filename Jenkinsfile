@@ -1,6 +1,7 @@
 node {
     stage('Create seed job') {
       jobDsl scriptText: '''job(\'seed-job\'){
+        println("${GIT_URL}")
         scm {
             git {
                 remote {
