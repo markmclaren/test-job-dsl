@@ -8,7 +8,7 @@ job('delete_other_jobs') {
     }
     steps {
         dsl {
-            external('**/*.dsl')
+            external('**/*_jobdsl.groovy')
             removeAction('DELETE')
         }
     }
