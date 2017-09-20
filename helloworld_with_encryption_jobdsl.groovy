@@ -2,8 +2,8 @@ import org.jasypt.util.text.BasicTextEncryptor
 
 // Fetch decryption key via the credentials plugin
 def secret = "do_not_use_this!"
-if(build.buildVariableResolver.resolve("SECRET_DECRYPTION_KEY")) {
-    secret = build.buildVariableResolver.resolve("SECRET_DECRYPTION_KEY")
+if(build.environment.get("SECRET_DECRYPTION_KEY")) {
+    secret = build.environment.get("SECRET_DECRYPTION_KEY")
 }
 // Never do this!
 println(secret)
