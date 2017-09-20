@@ -9,11 +9,6 @@ node {
                 }
            }
         }
-        wrappers {
-            injectPasswords {
-                injectGlobalPasswords()
-            }
-        }
         steps {
             gradle {
               tasks(\'libs\')
@@ -23,7 +18,12 @@ node {
                external \'**/*_jobdsl.groovy\'
                additionalClasspath \'lib/*.jar\'
             }
-        }    
+        }
+        wrappers {
+            credentialsBinding {
+                string('SECRET_DECRYPTION_KEY', 'SECRET_DECRYPTION_KEY')
+            }
+        }
       }'''
     }
 }
