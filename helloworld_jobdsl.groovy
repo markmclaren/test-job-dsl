@@ -4,3 +4,9 @@ job('helloworld') {
         shell('echo "Hello World!"')
     }
 }
+
+job('helloworld-another') {
+    steps {
+        shell('echo "Another Hello World!"')
+    }
+}
