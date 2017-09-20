@@ -1,6 +1,6 @@
 # Experiments with Job DSL
 
-In case you happen upon this.  I offer no support!  This is purely an area for my experimentation with Jenkins, Job DSL and the concept of *configuration as code*.  Based on ideas found at Jenkins [User Power Moves](https://github.com/jenkinsci/job-dsl-plugin/wiki/User-Power-Moves)
+In case you happen upon this.  I offer no support!  This is purely an area for my experimentation with Jenkins, [Job DSL plugin](https://wiki.jenkins.io/display/JENKINS/Job+DSL+Plugin) and the concept of *configuration as code*.  Based on ideas found at Jenkins [User Power Moves](https://github.com/jenkinsci/job-dsl-plugin/wiki/User-Power-Moves)
 
 ## Seed job creation:
 
