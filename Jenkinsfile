@@ -1,4 +1,5 @@
 node {
+    stage "Create seed job"
     jobDsl scriptText: '''job(\'seed-job\'){
       scm {
           git {
