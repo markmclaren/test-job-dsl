@@ -9,6 +9,11 @@ node {
                 }
            }
         }
+        wrappers {
+            injectPasswords {
+                injectGlobalPasswords()
+            }
+        }
         steps {
             gradle {
               tasks(\'libs\')

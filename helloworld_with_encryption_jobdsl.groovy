@@ -3,8 +3,8 @@ import org.jasypt.util.text.BasicTextEncryptor
 // Fetch decryption key via the credentials plugin
 def secret = "do_not_use_this!"
 
-if("${SECRET_DECRYPTION_KEY}" !=null) {
-    secret = "${SECRET_DECRYPTION_KEY}"
+if('${SECRET_DECRYPTION_KEY}' !=null) {
+    secret = '${SECRET_DECRYPTION_KEY'}
 }
 
 // Never do this!
