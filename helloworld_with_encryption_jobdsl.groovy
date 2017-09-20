@@ -8,7 +8,10 @@ if ("${SECRET_DECRYPTION_KEY}" != null) {
 }
 
 // Never do this!
+println("Secret: ")
+println(${SECRET_DECRYPTION_KEY})
 println(secret)
+println(secret.length())
 
 textEncryptor = new BasicTextEncryptor();
 textEncryptor.setPassword(secret);
