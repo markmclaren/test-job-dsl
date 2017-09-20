@@ -5,6 +5,8 @@ def secret = "do_not_use_this!"
 if(build.buildVariableResolver.resolve("SECRET_DECRYPTION_KEY")) {
     secret = build.buildVariableResolver.resolve("SECRET_DECRYPTION_KEY")
 }
+// Never do this!
+println(secret)
 
 textEncryptor = new BasicTextEncryptor();
 textEncryptor.setPassword(secret);
