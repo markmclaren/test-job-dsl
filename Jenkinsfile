@@ -8,7 +8,10 @@ node {
          }
       }
       steps {
-          gradle(\'libs\') 
+          gradle {
+            tasks(\'libs\')
+            useWrapper(false)
+          }
           dsl {
              external \'**/*.dsl\'
              additionalClasspath \'lib/*.jar\'
