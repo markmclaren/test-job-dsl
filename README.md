@@ -17,4 +17,6 @@ This seed job establishes:
 
 ## Running the seed job
 
+Before you run the seed job (in order to replicate Jasypt usage), you need to add a "secret text" credential (using the credentials plugin) called "SECRET_DECRYPTION_KEY".
+
 Once created by the pipeline, the seed job itself will create a Jenkins job (or possibly multiple jobs) for each \*_jobdsl.groovy file it finds in the Git repo
