@@ -26,4 +26,5 @@ Once created by the pipeline, the seed job itself will create a Jenkins job (or 
 Each of the jobs we plan to run require Jasypt encyption keys.  
 
 We will **not** store the raw encryption key in our Git repo - this is very insecure (and defeats the point of Jayspt).
+
 Instead we will further encrypt each encyrption key with a SECRET_DECRYPTION_KEY for the purpose of Jenkins job creation (double encryption if you like), this new key will not be stored in any Git repo but it will allow the storage of the encryption keys in a Git repo securely.
