@@ -10,11 +10,11 @@ From an empty Jenkins installation it is easier to import a Jenkinsfile from a G
 
 This seed job establishes:
 
-* the Git repo where the Job DSL lives
-* a gradle build to acquire required libraries (e.g. Jasypt)
+* the Git repo where the Job DSL files live
+* a gradle build to acquire required additional libraries (e.g. Jasypt)
 * the additional classpath (to include the Jasypt library)
 * the path for the job dsl files
 
 ## Running the seed job
 
-The seed job will create a Jenkins job (or possibly multiple jobs) for each \*_jobdsl.groovy file it finds in the Git repo
+Once created by the pipeline, the seed job itself will create a Jenkins job (or possibly multiple jobs) for each \*_jobdsl.groovy file it finds in the Git repo
