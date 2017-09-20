@@ -15,6 +15,7 @@ node {
             }
             dsl {
                external \'**/*_jobdsl.groovy\'
+               removeAction('DELETE')  
                additionalClasspath \'lib/*.jar\'
             }
         }    
