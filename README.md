@@ -2,6 +2,12 @@
 
 In case you happen upon this.  I offer no support!  This is purely an area for my experimentation with Jenkins, [Job DSL plugin](https://wiki.jenkins.io/display/JENKINS/Job+DSL+Plugin) and the concept of *configuration as code*.  Based on ideas found at Jenkins [User Power Moves](https://github.com/jenkinsci/job-dsl-plugin/wiki/User-Power-Moves)
 
+These experiments require the following Jenkins plugins (in addition to those installed with a default installation):
+
+[Job DSL Plugin](https://wiki.jenkins.io/display/JENKINS/Job+DSL+Plugin)
+
+[Text-finder Plugin](https://wiki.jenkins.io/display/JENKINS/Text-finder+Plugin)
+
 ## Seed job creation:
 
 The *Jenkinsfile* (Jenkins Pipeline) creates the Job DSL seed job.  This is *"imported"* into Jenkins by means of creating a new pipeline job and configuring the SCM section to look at this Git repository.   Running this pipeline will create/update the seed job.
