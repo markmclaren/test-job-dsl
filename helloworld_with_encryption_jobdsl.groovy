@@ -17,13 +17,15 @@ textEncryptor = new BasicTextEncryptor();
 textEncryptor.setPassword(secret);
 
 def stringToEncrypt = "Hello World!"
-def commandToRun = 'echo "' + encrypt(stringToEncrypt) + '"'
+def encryptedString = encrypt(stringToEncrypt)
+def decryptedString = decrypt(encryptedString)
 
 job('helloworld-with-encryption') {
 
     steps {
         println("Hello From Inside the Seed Job!")
-        shell(commandToRun)
+        shell('echo "' + encryptedString + '"')
+        shell('echo "' + decryptedString + '"')
     }
 }
 
