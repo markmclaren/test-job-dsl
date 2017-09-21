@@ -1,3 +1,7 @@
 job('deliberate-fail') {
-    //throw new Exception("Arrrgggghhh")
+    try {
+        throw new Exception("Arrrgggghhh")
+    } catch (Exception ex){
+        println("[UNSTABLE]")
+    }
 }
