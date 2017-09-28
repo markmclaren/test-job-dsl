@@ -6,6 +6,8 @@ These experiments require the following Jenkins plugins (in addition to those in
 
 [Job DSL Plugin](https://wiki.jenkins.io/display/JENKINS/Job+DSL+Plugin)
 
+[Repository Connector Plugin](https://wiki.jenkins.io/display/JENKINS/Repository+Connector+Plugin)
+
 [Text-finder Plugin](https://wiki.jenkins.io/display/JENKINS/Text-finder+Plugin)
 
 ## Seed job creation:
@@ -17,7 +19,7 @@ From an empty Jenkins installation it is easier to import a Jenkinsfile from a G
 This seed job establishes:
 
 * the Git repo where the Job DSL files live
-* a gradle build to acquire required additional libraries (e.g. [Jasypt](http://www.jasypt.org/))
+* repository-connector configuration to acquire additional libraries (e.g. [Jasypt](http://www.jasypt.org/))
 * the additional classpath (to include the Jasypt library)
 * the path for the job dsl files
 
