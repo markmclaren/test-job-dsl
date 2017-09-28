@@ -10,10 +10,19 @@ jobDsl scriptText: '''job(\'seed-job\') {
         }
     }
     steps {
-        gradle {
-            tasks(\'libs\')
-            useWrapper(false)
-        }
+        resolveArtifacts {
+            targetDirectory(\'lib\')
+            artifact {
+                groupId(\'org.jasypt\')
+                artifactId(\'jasypt\')
+                version(\'1.9.2\')
+            }
+            artifact {
+                groupId(\'org.bouncycastle\')
+                artifactId(\'bcprov-jdk16\')
+                version(\'1.46\')
+            }
+        }	    
         dsl {
             external \'**/*_jobdsl.groovy\'
             additionalClasspath \'lib/*.jar\'
